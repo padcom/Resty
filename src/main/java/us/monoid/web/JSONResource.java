@@ -34,6 +34,13 @@ public class JSONResource extends AbstractResource {
 		return (JSONArray)json;
 	}
 
+	/**
+	/* Parse and return a boolean value
+	/*
+	public boolean bool() throws IOException, JSONException {
+		return (boolean)unmarshal();
+	}
+
 	/** 
 	 * Parse and return JSON object. Parsing is done only once after which the inputStrem is at EOF.
 	 * @return the JSON object
